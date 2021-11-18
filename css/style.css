@@ -129,6 +129,10 @@ h5{
     height: calc(100% - 100px);
 }
 
+.space-top{
+    margin-top: 10px;
+}
+
 ul > li{
     list-style: none;
     padding: 7px 0;
@@ -166,7 +170,7 @@ hr {
 
 .botton{
     margin-right: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: 2px white solid;
     border-radius: 25px;
 }
@@ -174,15 +178,20 @@ hr {
 .nav-main{
     width: 100%;
     height: 50px;
-    margin-top: 100px;
-    background-color: rgb(1, 1, 2);
+    margin-top: 120px;
+    background-color: rgb(40, 46, 66);
     text-align: center;
     vertical-align: middle;
+    color: #888;
 }
 
 .nav-main > ul li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+.border-bottom{
+    border-bottom: 3px chartreuse solid;
 }
 
 .row::after{
@@ -195,9 +204,21 @@ hr {
     float: left;
     width: 200px;
     height: 200px;
-    background-color: yellow;
     margin: 10px 10px 100px 10px;
+    background-color: yellow;
 }
+
+.copertina{
+    background: url("../img/metal_lifting.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+h4{
+    color: #888;
+}
+
 
 /* footer */
 
