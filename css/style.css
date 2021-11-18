@@ -28,13 +28,13 @@ body{
     width: calc(100% - 200px);
     height: 100%;
     overflow-y: scroll;
-    background-color: rgb(41, 45, 58);
+    background-color: rgb(40, 46, 66);
 }
 
 .upgrade{
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.705);
     position: fixed;
     display: flex;
     justify-content: end;
@@ -47,6 +47,7 @@ footer{
     height: 100px;
     background-color: green;
     display: flex;
+    z-index: 100;
 }
 
 /*------------------------ particolari --------------------*/
@@ -71,6 +72,7 @@ footer{
 
 .icon-row{
     width: 100%;
+    margin: 5px 0;
 }
 
 .border-row{
@@ -111,27 +113,54 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
-i{
-    width: 35px;
-    height: 35px;
-    
+.fa-plus-square{
+    font-size: 35px;
 }
 
 .lista > h3 {
     color: white;
+    margin: 20px 0 10px 0;
 }
 
 .lista{
-    height: 500px;
+    height: calc(100% - 100px);
+}
+
+ul > li{
+    list-style: none;
+    padding: 7px 0;
+    font-size: 14px;   
 }
 
 .download{
     height: 100px;
-    background-color: darkgrey;
+    margin: 0 30px 10px 0;
     justify-content: flex-end;
 }
+
+.scarica{
+    background: url("../img/download.svg");
+}
+
+hr {
+    margin: 15px 0;   
+}
+
+.profile{
+    background: url("../img/profile.svg");
+    color: white;
+    font-size: 17px;
+}
+
+.icon-border{
+    border-radius: 50%;
+    background-color: #888;
+}
+
+
 
 /* main */
 
@@ -146,7 +175,7 @@ i{
     width: 100%;
     height: 50px;
     margin-top: 100px;
-    background-color: grey;
+    background-color: rgb(1, 1, 2);
     text-align: center;
     vertical-align: middle;
 }
