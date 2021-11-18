@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
 .container{
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: rgb(0, 0, 0);
     display: flex;
 }
 
@@ -16,76 +21,125 @@
 .side-bar{
     width: 200px;
     height: 100%;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
+    color: #888;
 }
 
 .main{
-    width: 100%;
+    width: calc(100% - 200px);
     height: 100%;
-    background-color: royalblue;
+    overflow-y: scroll;
+    background-color: rgb(41, 45, 58);
 }
 
 .upgrade{
     width: 100%;
-    height: 80px;
-    background-color: orange;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: calc(100% - 200px)
 }
 
 footer{
     width: 100%;
     height: 100px;
     background-color: green;
-    position: fixed;
+    display: flex;
 }
 
 /*------------------------ particolari --------------------*/
 
 /* sidebar */
 .logo{
-    width: 200px;
     height: 100px;
-    background-color: chartreuse;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-big{
+    height: 50px;
+    width: 140px;
+    background: url("../img/logo.svg") no-repeat;
 }
 
 .menù{
     height: 100px;
-    background-color: chocolate;
+}
+
+.icon-row{
+    width: 100%;
+}
+
+.border-row{
+    border-left: 5px chartreuse solid;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.home-photo{
+    background: url("../img/home.svg");
+    margin-left: 15px;
+    color: white;
+}
+
+.search{
+    background: url("../img/search.svg");
+    margin-left: 20px;
+}
+
+.libreria{
+    background: url("../img/libreria.svg");
+    margin-left: 20px;
+}
+
+h5{
+    width: 100px;
+    position: absolute;
+    left: 35px;
+    top: 8px;
 }
 
 .playlist{
-    height: 100%;
+    height: calc(100% - 200px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+i{
+    width: 35px;
+    height: 35px;
     
 }
 
+.lista > h3 {
+    color: white;
+}
+
 .lista{
-    height: 100px;
-    background-color: darksalmon;
+    height: 500px;
 }
 
 .download{
     height: 100px;
     background-color: darkgrey;
+    justify-content: flex-end;
 }
 
 /* main */
 
-.upgrade{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: calc(100% - 200px);
-}
-
 .botton{
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 10px 20px;
     border: 2px white solid;
+    border-radius: 25px;
 }
 
 .nav-main{
@@ -113,22 +167,23 @@ footer{
     width: 200px;
     height: 200px;
     background-color: yellow;
-    margin: 10px;
+    margin: 10px 10px 100px 10px;
 }
 
 /* footer */
 
 .nav{
     height: 100%;
-    float: left;
 }
 
 .nav-left, .nav-right{
-    width: 20%;
+    width: 200px;
+    max-width: calc(100%/3);
     background-color: fuchsia;
 }
 
 .nav-center{
-    width: 60%;
+    width: calc(100% - 500px);
+    flex-grow: 1;
     background-color: greenyellow ;
 }
