@@ -333,17 +333,16 @@ h4{
 
 .nav{
     height: 100%;
+    background-color: #333;
 }
 
 .nav-left, .nav-right{
     width: 200px;
-    background-color: #333;
 }
 
 .nav-center{
     width: calc(100% - 400px);
     flex-grow: 1;
-    background-color: #333;
 }
 
 .mini-player{
@@ -429,13 +428,104 @@ input{
 
 /*------------------ media ------------------- */
 
-@media screen and (max-width: 600px) {
-    
-
+@media screen and (max-width: 640px) {
+    .album{
+        margin-left: 20%;
+    }
 }
 
+@media screen and (max-width: 575px) {
 
+    .side-bar{
+        width: 80px;
+    }
 
+    .main, .upgrade{
+        width: calc(100% - 80px);
+    }
+
+    .logo-big,
+    .playlist,
+    .space-left,
+    .icon > h5,
+    .icon-row > hr{
+        display: none;
+    }
+
+    .mini-logo{
+        background: url("../img/logo-small.svg");
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon > h5{
+        display: none;
+    }
+
+    .border-row{
+    border-left: 5px rgb(0, 0, 0) solid;  
+    }
+
+    .download{
+        position: absolute;
+        bottom: 90px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .nav-left,
+    .nav-right{
+        width: 25%;
+    }
+
+    .nav-center{
+        width: 50%;
+    }
+
+    .fa-heart{
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        color: #888;
+    }
+    
+    .fa-folder{
+        position: absolute;
+        left: 70px;
+        top: 40px;
+        color: #888;
+    }
+
+    .play-music > i,
+    .play-music > .far{
+        font-size: 15px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .nav-right{
+        text-align: center;
+    }
+
+    input{
+        width: 40%;
+        margin-top: 10px; 
+    }
+    
+    .input-small{
+        width: 50%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .small-icon{
+        margin-top: 25px;
+    }
+    
+    .small-icon > i{
+        font-size: 15px;
+    }
+
+}
 
 
 
