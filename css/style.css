@@ -16,6 +16,35 @@ body{
     display: flex;
 }
 
+li:hover,
+h5:hover,
+.icon-row:hover,
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+}
+
+h6:hover{
+    text-decoration: underline;
+}
+
+.botton:hover{
+    font-size: 20px;
+}
+
+.play-music > .far:hover{
+    font-size: 40px;
+}
+
+.copertina:hover .play-circle,
+.copertina:hover .ombra{
+    display: inline-block;
+}
+
+input[type=range]:hover{
+    accent-color: lime;
+}
+
 /*----------------- struttura -----------------*/
 
 .side-bar{
@@ -110,30 +139,27 @@ h5{
 }
 
 .playlist{
-    height: calc(100% - 200px);
+    height: calc(100vh - 490px);
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 150px;
     flex-grow: 1;
-    margin-left: 20px;
 }
 
 .fa-plus-square{
     font-size: 35px;
 }
 
-.lista > h3 {
+.space-left > h3 {
     color: white;
-    margin: 20px 0 10px 0;
+    margin: 10px 20px;
 }
 
-.scroll-bar-white{
-    overflow-y: auto;
-    height: 100%;
-    min-height: 200px;
-}
-
-.lista{
-    height: calc(100% - 100px);
+.space-left > .icon-row{
+    margin: 0 20px;
 }
 
 .space-top{
@@ -148,7 +174,7 @@ ul > li{
 
 .download{
     height: 100px;
-    margin: 0 30px 10px 0;
+    margin: 0 20px;
     background: black;
 }
 
@@ -220,6 +246,18 @@ hr {
     height: 200px;
 }
 
+.ombra{
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.418);
+    display: none;
+}
+
+.play-circle{
+    font-size: 80px;
+    margin-top: 60px; 
+}
+
 .foto-copertina-1{
     background: url("../img/metal_lifting.jpg");
     background-size: contain;
@@ -282,6 +320,10 @@ h4{
     margin-left: 10px;
 }
 
+.left-space > h1{
+    margin-top: 25px;
+}
+
 .left-space > h4{
     margin: 10px 0;
 }
@@ -299,7 +341,7 @@ h4{
 }
 
 .nav-center{
-    width: calc(100% - 500px);
+    width: calc(100% - 400px);
     flex-grow: 1;
     background-color: #333;
 }
@@ -347,6 +389,7 @@ h6{
 }
 
 .play-music{
+    width: 100%;
     padding-top: 15px;
     display: flex;
     align-items: center;
@@ -363,7 +406,7 @@ h6{
 }
 
 input{
-    width: 500px;
+    width: 60%;
     margin-top: 15px; 
 }
 
@@ -377,14 +420,19 @@ input{
 
 .input-small{
     width: 100px;
-    margin-top: 40px;
+    margin-top: 42px;
 }
 
 .small-icon > i{
     padding: 0 5px;
-
 }
 
+/*------------------ media ------------------- */
+
+@media screen and (max-width: 600px) {
+    
+
+}
 
 
 
